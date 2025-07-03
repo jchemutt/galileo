@@ -31,7 +31,7 @@ class PixelwisePatchClassifier(nn.Module):
 
     def encode_features(self, x):
         B, C, H, W = x.shape
-        x = x.view(B, 6, 12, H, W).permute(0, 1, 3, 4, 2).contiguous()
+        x = x.view(B, 5, 12, H, W).permute(0, 1, 3, 4, 2).contiguous()
         inputs = []
 
         for b in range(B):
