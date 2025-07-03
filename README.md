@@ -45,7 +45,7 @@ python download_tiles_from_gee.py
 Use preprocessed Sentinel-1/Sentinel-2 tiles and polygon labels to generate 8×8 pixel-wise training patches:
 
 ```bash
-python extract_patches_from_tiles.py.py
+python extract_patches_from_tiles.py
 ```
 
 This script will:
